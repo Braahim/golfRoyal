@@ -1,0 +1,55 @@
+{% extends 'calendar.html.twig' %}
+
+{% block body %}
+<br>
+<br>
+<br>
+<br>
+<br>
+   <div class="container">
+    <div class="card text-center">
+        <div class="card-header">
+            Disponibilité
+        </div>
+        <div class="card-body">
+            {% if rooms is empty  %}
+                <h5 class="card-title">Nous sommes désolé, nous avons pas de {{ reservation.typeChambre.lib }} disponibles
+                    du {{ reservation.dateArrive |date("d/m/y") }} au {{ reservation.dateSortie |date("d/m/y") }}</h5>
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <a href="{{ path('reservation_check') }}" class="btn btn-primary">Choisir d'autres dates</a>
+                <a href="{{ path('home_page') }}" class="btn btn-primary">Annuler</a>
+
+            {% else %}
+                <h5 class="card-title">Nous avons des  {{ reservation.typeChambre.lib }} disponibles
+                    du {{ reservation.dateArrive |date("d/m/y") }} au {{ reservation.dateSortie |date("d/m/y") }}</h5>
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <a href="{{ path('client_new', {'id': reservation.id}) }}" class="btn btn-primary">Confirmer</a>
+
+            {% endif %}
+
+
+            {#
+            {% if rooms is empty %}
+                <h5 class="card-title">Nous sommes désolé, nous avons pas de {{ reservation.typeChambre.lib }} disponibles
+                    du {{ reservation.dateArrive |date("d/m/y") }} au {{ reservation.dateSortie |date("d/m/y") }}</h5>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary"></a>
+                <a href="#" class="btn btn-primary">Annuler</a>
+            {% else %}
+                <h5 class="card-title">Nous avons des  {{ reservation.typeChambre.lib }} disponibles
+                    du {{ reservation.dateArrive |date("d/m/y") }} au {{ reservation.dateSortie |date("d/m/y") }}</h5>
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <a href="{{ path('client_new', {'id': reservation.id}) }}" class="btn btn-primary">Confirmer</a>
+            {% endif %}
+#}
+        </div>
+        <div class="card-footer text-muted">
+
+        </div>
+    </div>
+   </div>
+{% endblock %}

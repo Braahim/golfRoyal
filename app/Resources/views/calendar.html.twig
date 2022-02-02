@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+
+
+    <title>Golf Royal Hotel - Tunis</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{{ asset('assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/calendar/css') }}" rel="stylesheet" type="text/css">
+
+    <!-- Template Main CSS File -->
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ asset('assets/calendar/fonts/icomoon/style.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('assets/calendar/css/rome.css') }}">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/calendar/css/bootstrap.min.css') }}">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="{{ asset('assets/calendar/css/style.css') }}">
+
+    <title>Calendar #7 (inline)</title>
+</head>
+
+
+
+<!-- ======= Top Bar ======= -->
+<section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent" style="background-color: black;">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+        <i class="bi bi-phone d-flex align-items-center"><span>+216 71 34 43 11</span></i>
+        <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 11:00 AM - 23:00 PM</span></i>
+    </div>
+</section>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center header-transparent" style="background-color: black;">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between" style="height: 200px">
+
+        <div class="logo me-auto">
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <a href="index.html"><img src="{{ asset('assets/img/logo_blanc_petit.png') }}" alt="" class="img-fluid" style=" ;"></a>
+        </div>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="#about">Situation de l'hôtel</a></li>
+                <li><a class="nav-link scrollto" href="#specials">Hébergement</a></li>
+                <li><a class="nav-link scrollto" href="#chefs">Bar & Restauration</a></li>
+                <li><a class="nav-link scrollto" href="#gallery">Galerie</a></li>
+                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+        <a href="{{ path('reservation_check') }}" class="book-a-table-btn scrollto" data-toggle="modal" data-target="#exampleModalCenter">Book a table</a>
+
+    </div>
+</header><!-- End Header -->
+<br><br><br>
+<body>
+
+{% block body %}
+{% endblock %}
+
+
+
+
+</body>
+
+<script src="{{ asset('assets/calendar/js/jquery-3.3.1.min.js') }}"></script>
+<script src="{{ asset('assets/calendar/js/popper.min.js') }}"></script>
+<script src="{{ asset('assets/calendar/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('assets/calendar/js/rome.js') }}"></script>
+
+<script src="{{ asset('assets/calendar/js/main.js') }}"></script>
+{% block javascripst %}
+{% endblock %}
+</html>

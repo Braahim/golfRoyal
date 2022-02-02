@@ -1,0 +1,41 @@
+{% extends 'back.html.twig' %}
+
+{% block body %}
+    {% form_theme edit_form 'bootstrap_4_layout.html.twig' %}
+    <section>
+        <br>
+
+        <br>
+        <br>
+
+        <div class="container" style="text-align: center; position: center;">
+            <div class="row">
+
+                <div class="col-md-12 col-xl-6 d-flex mb-5 mb-xl-0">
+                    <div class="card mb-0 col-md-8" >
+                        <br>
+                        <div class="card-header">
+                            <h3>Modifier Type Chambre</h3>
+                        </div>
+                        <br>
+                        <div class="card__body" >
+                            {{ form_start(edit_form) }}
+                            {{ form_widget(edit_form) }}
+                            <input type="submit" value="Edit" class="form-control" style="background-color: #00ab6c;color: white;"/>
+                            {{ form_end(edit_form) }}
+
+                            <ul>
+                                <li>
+
+                                </li>
+                               </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

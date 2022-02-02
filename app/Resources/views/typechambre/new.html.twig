@@ -1,0 +1,40 @@
+
+{% extends 'back.html.twig' %}
+
+{% block body %}
+    {% form_theme form 'bootstrap_4_layout.html.twig' %}
+    <section>
+        <br>
+
+        <br>
+        <br>
+
+        <div class="container" style="text-align: center; position: center;">
+            <div class="row">
+
+                <div class="col-md-12 col-xl-6 d-flex mb-5 mb-xl-0">
+
+                    <div class="card mb-0 col-md-8" >
+                        <br>
+                        <div class="card-header">
+                        <h3>Ajouter Type Chambre</h3>
+                        </div>
+                        <br>
+                        <div class="card__body" >
+                            {{ form_start(form) }}
+                            {{ form_widget(form) }}
+                            <input type="submit" value="Ajouter" class="form-control" style="background-color: #00ab6c;color: white;"/>
+                            {{ form_end(form) }}
+
+<br>
+<br>
+<br>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

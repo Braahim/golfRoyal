@@ -1,0 +1,118 @@
+{% extends 'back.html.twig' %}
+
+{% block body %}
+    <div class="dashboard-wrapper">
+        <div class="dashboard-ecommerce">
+            <div class="container-fluid dashboard-content ">
+                <h1>Réservations</h1>
+
+
+                <div class="row">
+
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                        <div class="card">
+
+                            {% for flashMessage in app.session.flashbag.get('notice') %}
+
+                                <div class="alert alert-success">
+                                    {{ flashMessage }}
+                                </div>
+
+                            {% endfor %}
+                            <p style="text-align: right;">
+                                <button style="top: 30px;right:30px;position: relative;color: #0a3c93
+                                                background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;">  </button>
+                            </p>
+
+                            <div class="card-body">
+
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered first">
+                                        <thead>
+                                        <tr>
+                                            <th> ID </th>
+                                            <th>Lib</th>
+                                            <th>Check in</th>
+                                            <th>Check out</th>
+                                            <th>Date réservation</th>
+                                            <th> Type Chambre</th>
+                                            <th>Traité</th>
+                                            <th>Client</th>
+
+                                            <th>Actions</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for reservation in reservations %}
+                                            <tr>
+                                                <td><a href="{{ path('reservation_show', { 'id': reservation.id }) }}">{{ reservation.id }}</a></td>
+                                                <td>{{ reservation.room.titre |default('undefined') }}</td>
+                                                <td>{% if reservation.dateArrive %}{{ reservation.dateArrive|date('Y-m-d') }}{% endif %}</td>
+                                                <td>{% if reservation.dateSortie %}{{ reservation.dateSortie|date('Y-m-d') }}{% endif %}</td>
+                                                <td>{% if reservation.dateCreation %}{{ reservation.dateCreation|date('Y-m-d') }}{% endif %}</td>
+                                                <td>{{ reservation.typeChambre.lib }}</td>
+
+                                                {% if reservation.treated ==1  %}<td style="color: green;"> OUI</td>
+                                                    {% else %} <td style="color: red;">NON</td>
+                                                        {% endif %}
+
+
+                                                <td>
+                                                    <a href="{{ path('client_show', { 'id': reservation.client.id }) }}">
+                                                        {{ reservation.client.nom }} {{ reservation.client.prenom }}</a>
+                                                </td>
+                                              {#<td>{{ reservation.Client.nom }}</td>#}
+                                                <td>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="{{ path('reservation_show', { 'id': reservation.id }) }}">show</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ path('reservation_edit', { 'id': reservation.id }) }}">edit</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ path('reservation_delete', { 'id': reservation.id }) }}"
+                                                               onclick="return confirm('Etes vous sur de vouloir supprimer cette ' +
+                                                                'demande de réservation ?');">delete</a>
+                                                        </li>
+
+                                                            {% if reservation.treated ==0  %}
+                                                        <li>
+                                                            <a href="{{ path('reservation_traiter', { 'id': reservation.id }) }}">Confirmer</a>
+                                                        </li>
+                                                            {% endif %}
+
+                                                        <li>
+
+                                                                <a href="{{ path('reservation_archiver', { 'id': reservation.id }) }}">archiver</a>
+
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
+                                        <br>
+                                        </tbody>
+                                    </table>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

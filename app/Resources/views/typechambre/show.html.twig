@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Typechambre</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ typeChambre.id }}</td>
+            </tr>
+            <tr>
+                <th>Lib</th>
+                <td>{{ typeChambre.lib }}</td>
+            </tr>
+            <tr>
+                <th>Prix</th>
+                <td>{{ typeChambre.prix }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('typechambre_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('typechambre_edit', { 'id': typeChambre.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

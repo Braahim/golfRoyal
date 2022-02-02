@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Reservations list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Idroom</th>
+                <th>Datearrive</th>
+                <th>Datesortie</th>
+                <th>Idtype</th>
+                <th>Idclient</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for reservation in reservations %}
+            <tr>
+                <td><a href="{{ path('reservation_show', { 'id': reservation.id }) }}">{{ reservation.id }}</a></td>
+                <td>{{ reservation.room.titre |default('undefined') }}</td>
+                <td>{% if reservation.dateArrive %}{{ reservation.dateArrive|date('Y-m-d') }}{% endif %}</td>
+                <td>{% if reservation.dateSortie %}{{ reservation.dateSortie|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ reservation.typeChambre.lib }}</td>
+                <td>{{ reservation.idClient }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('reservation_show', { 'id': reservation.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('reservation_edit', { 'id': reservation.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('reservation_check') }}">Check availibility</a>
+        </li>
+    </ul>
+{% endblock %}

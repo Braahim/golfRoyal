@@ -1,0 +1,13 @@
+<h3>Mr/Mme {{ client.nom }} {{ client.prenom }}</h3>
+<p>Votre réservation est bien confirmée</p><br>
+<p>Détail de la réservation</p>
+<ul>
+    <li>Checkin: {{ reservation.dateArrive|date('d-m-y') }}</li>
+    <li>Checkout: {{ reservation.dateSortie|date('d-m-y') }}</li>
+
+    <li>Type Chambre: {{ reservation.typeChambre.lib }}</li>
+    <li>Prix (nuitée) : {{ reservation.typeChambre.prix }} TND</li>
+    <li>Prix total : {{ total }} TND</li>
+</ul>
+
+<p>Cordialement</p>

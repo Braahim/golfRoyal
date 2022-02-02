@@ -1,0 +1,56 @@
+{% extends 'calendar.html.twig' %}
+
+{% block body %}
+    <div class="content">
+
+        <div class="container text-left">
+
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-center">
+                    <h2 class="mb-5 text-center">Vérification Disponibilité Chambre</h2>
+
+                    <form action="#" class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div id="inline_cal_from"></div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div id="inline_cal_to"></div>
+                        </div>
+                    </form>
+                </div>
+                {{ form_start(form) }}
+                <div class="d-flex">
+
+                    {{ form_widget(form.arrive) }}
+
+                    {{ form_widget(form.sort) }}
+                </div>
+                {{ form_widget(form) }} <br><br>
+                <p style="text-align: center;">
+                <input type="submit" value="Vérifier" class="btn btn-primary mb-2 btn-book animate__animated animate__fadeInUp scrollto"
+                       style="text-align: center; background-color: #e0a800; border-color: #e0a800;" />
+                </p>
+                {{ form_end(form) }}
+            </div>
+
+        </div>
+    </div>
+
+    <h1>Reservation creation</h1>
+
+
+
+    <ul>
+        <li>
+            <a href="{{ path('reservation_index') }}">Back to the list</a>
+        </li>
+    </ul>
+
+{% endblock %}
+
+
+
+
+{% block javascript %}
+
+{% endblock %}

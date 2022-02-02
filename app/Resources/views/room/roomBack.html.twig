@@ -1,0 +1,85 @@
+{% extends 'back.html.twig' %}
+
+{% block body %}
+    <div class="dashboard-wrapper">
+        <div class="dashboard-ecommerce">
+            <div class="container-fluid dashboard-content ">
+                <h1>Réservations</h1>
+
+
+                <div class="row">
+
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                        <div class="card">
+
+                            {% for flashMessage in app.session.flashbag.get('notice') %}
+
+                                <div class="alert alert-success">
+                                    {{ flashMessage }}
+                                </div>
+
+                            {% endfor %}
+                            <a style="text-align: right;" href="{{ path('room_new') }}">
+                                <button style="top: 30px;right:30px;position: relative;color: #0a3c93;
+                                                background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;">Ajouter Chambre  </button>
+                            </a>
+
+                            <div class="card-body">
+
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered first">
+                                        <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Titre</th>
+                                            <th>Description</th>
+
+                                            <th>Actions</th>
+
+
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for room in chambres %}
+                                            <tr>
+                                                <td><a href="{{ path('room_show', { 'id': room.id }) }}">{{ room.id }}</a></td>
+                                                <td>{{ room.titre }}</td>
+                                                <td>{{ room.description }}</td>
+
+                                                <td>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="{{ path('room_show', { 'id': room.id }) }}">show</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ path('room_edit', { 'id': room.id }) }}">edit</a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
+                                        <br>
+                                        </tbody>
+                                    </table>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

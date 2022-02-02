@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Typechambres list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Lib</th>
+                <th>Prix</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for typeChambre in typeChambres %}
+            <tr>
+                <td><a href="{{ path('typechambre_show', { 'id': typeChambre.id }) }}">{{ typeChambre.id }}</a></td>
+                <td>{{ typeChambre.lib }}</td>
+                <td>{{ typeChambre.prix }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('typechambre_show', { 'id': typeChambre.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('typechambre_edit', { 'id': typeChambre.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('typechambre_new') }}">Create a new typeChambre</a>
+        </li>
+    </ul>
+{% endblock %}

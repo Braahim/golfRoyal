@@ -1,0 +1,859 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-body">
+                <p> HELLO</p>
+            </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div class="hero-container">
+            <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+                <div class="carousel-inner" role="listbox">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active" style="background: url(assets/img/RECEPTION/LOBBY%20DESK%20NUIT.jpg);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <img src="assets/img/logo_blanc_petit.png">
+
+                                <div>
+                                    <br>
+                                    <a href="{{ path('reservation_check') }}" class="btn-book animate__animated animate__fadeInUp scrollto">Réservez Maintenant </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section><!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+
+
+            <div class="container-fluid">
+
+                <div class="section-title">
+                    <img src="assets/img/logo.png"><br>
+                    <img src="https://img.icons8.com/windows/32/000000/star.png"/>
+                    <img src="https://img.icons8.com/windows/32/000000/star.png"/>
+                    <img src="https://img.icons8.com/windows/32/000000/star.png"/>
+                </div>
+            </div>
+        </section><!-- End About Section -->
+
+
+
+        <section id="events" class="events">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                </div>
+
+                <div class="events-slider swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="row event-item">
+                                <div class="col-lg-6">
+                                    <img src="assets/img/tunis_cv.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                                    <h3></h3>
+                                    <div class="price">
+                                        <p><span></span></p>
+                                    </div>
+                                    <br><br><br><br>
+                                    <p class=""><i class="bi bi-check-circle"></i>    En plus de son nouveau style moderne et chaleureux qui lui confère un cachet unique, l’hôtel bénéficie d’un emplacement exceptionnel à deux pas de l’avenue Habib Bourguiba, principale artère au cœur du centre-ville entourée de nombreux restaurants et de boutiques, et débouchant sur la Médina.
+                                    </p>
+
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="row event-item">
+                                <div class="col-lg-6">
+                                    <img src="assets/img/collage.png" class="img-fluid" alt="" style="">
+                                </div>
+                                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                                    <h3></h3>
+                                    <div class="price">
+                                        <p><span></span></p>
+                                    </div>
+
+
+                                    <ul>
+                                        <li><p> <i class="bx bx-check-double"></i> Situé au cœur du centre ville de Tunis, le Golf Royal Hôtel, classé 3 étoiles, est l’adresse idéale pour
+
+                                                un séjour d’affaires et de loisirs, que ce soit en couple ou en famille.</p></li>
+
+                                        <li><p> <i class="bx bx-check-double"></i> Il est à quelques pas seulement
+
+                                                de l’avenue Habib Bourguiba (artère principale de Tunis) entre la Médina et la place du 14 janvier
+
+                                                2011. A moins de 8 km de l’Aéroport de Tunis-Carthage, des Berges du Lac, des Ports de Rades et de
+
+                                                La Goulette, vous pouvez accéder rapidement aux principaux centres d’affaires et touristiques de la
+
+                                                capitale.</p></li>
+
+                                        <li><p> <i class="bx bx-check-double"></i>   En plus de sa situation géographique exceptionnelle, vous serez séduit par son cachet
+
+                                                unique et son tout nouveau design moderne et chaleureux. Vous apprécierez notamment l’élégance
+
+                                                des ses nouvelles chambres, le charme du lobby et du Green Bar qui ont été entièrement redessinés.</p></li>
+                                    </ul>
+                                    <p class="">
+
+                                    </p>
+
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+
+            </div>
+
+        </section><!-- End Events Section -->
+
+        <!-- ======= Specials Section ======= -->
+        <section id="specials" class="specials">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2><span>Hébergement </span></h2>
+                </div>
+
+                <div class="row">
+                    <br><br><br>
+                    <div class="col-lg-3">
+                        <ul class="nav nav-tabs flex-column">
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Chambre Supérieure</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Suite </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-9 mt-4 mt-lg-0">
+                        <div class="tab-content">
+
+                            <div class="tab-pane " id="tab-2">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3 style="text-align: center;">Suite</h3>
+
+                                        <p style="text-align: center">  &ensp;&ensp;&ensp;
+                                            <img src="assets/img/article2.jpg" style="width: 300px;">
+                                        </p>
+
+                                        <p>
+                                            Une connexion Wifi gratuite est disponible dans tous les hébergements.
+
+                                            Superficie : 36 m²
+
+                                            Type de lit(s) : 1 très grand lit double (2 mètre* 2métre)  </p>
+                                    </div>
+
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+
+                                        <div id="carouselExampleFade2" class="carousel slide carousel-fade" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="assets/img/SUITE/suite.jpg" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/SUITE/suite_classique.jpg" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/SUITE/suite1.jpg" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/SUITE/suitevc.jpg" class="d-block w-100" alt="...">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleFade2" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only"></span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleFade2" role="button" data-slide="next"  style="color: black">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane active show" id="tab-3">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3 style="text-align: center;">Chambre supérieure</h3>
+
+                                        <p style="text-align: center">  &ensp;&ensp;&ensp;
+                                            <img src="assets/img/article3.jpg" style="width: 300px;">
+                                        </p>
+
+                                        <p>
+                                            Une connexion Wifi gratuite est disponible dans tous les hébergements.
+
+                                            Superficie : 36 m²
+
+                                            Type de lit(s) : 1 très grand lit double (2 mètre* 2métre)  </p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+
+                                        <div id="carouselExampleFade1" class="carousel slide carousel-fade" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="assets/img/CHAMBRE/CHAMBRE.jpg" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/CHAMBRE/CHAMBRE3.jpg" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/CHAMBRE/CHAMBRE4.jpg" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/CHAMBRE/CHAMBRE5.jpg" class="d-block w-100" alt="...">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleFade1" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only"></span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleFade1" role="button" data-slide="next"  style="color: black">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Specials Section -->
+
+
+
+
+
+        <!-- ======= About Section ======= -->
+        <!--
+      <section id="about" class="about">
+
+
+        <div class="container-fluid">
+
+          <div class="row">
+
+            <div class="col-lg-5 align-items-stretch " style='background-image: url("assets/img/RECEPTION/LOBBY20.jpg"); left: 500px;'>
+
+            </div>
+
+            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+              <div class="content">
+                <p><br>
+                     </p>
+
+
+
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bx bx-check-double"></i> En plus de son nouveau style moderne et chaleureux qui lui confère un cachet unique, l’hôtel bénéficie d’un emplacement exceptionnel à deux pas de l’avenue Habib Bourguiba, principale artère au cœur du centre-ville entourée de nombreux restaurants et de boutiques, et débouchant sur la Médina.</li>
+                  <li><i class="bx bx-check-double"></i> Tout récemment rénové, l’hôtel offre des chambres de catégorie supérieure, spacieuses avec de grands lits. Toutes les chambres sont climatisées et équipées de TV à écran plat avec chaines satellites françaises, internationales et locales, d’une connexion internet wifi gratuite, d’un téléphone avec accès direct, d’une salle de bain avec baignoire ou douche, d’un coffre-fort, d’une bouilloire et d’un mini bar.</li>
+                  <li><i class="bx bx-check-double"></i>  Un Room service, un service de réveil, le petit déjeuner en chambre et un service de buanderie et de nettoyage à sec sont disponibles sur simple demande.</li>
+                     <li><i class="bx bx-check-double"></i>
+  L’hôtel dispose d'un business center, d'un bar et d'une salle de petit-déjeuner ouverte de 6h30 à 10h30 en semaine, et jusque 11h30 le samedi et dimanche.
+  Soucieux et respectueux de la lutte contre la pandémie de coronavirus, l’hôtel exige le respect des mesures barrières et ne sert le petit déjeuner qu’individuellement et en chambre.
+  Un parking public payant 24/24-7/7 est à disposition à proximité de l’hôtel.</li>
+                </ul>
+                <p>
+
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- End About Section -->
+
+        <!-- ======= Whu Us Section ======= -->
+        <section id="why-us" class="why-us">
+            <div class="container">
+
+
+                <div class="container-fluid">
+
+
+
+                </div>
+
+                <div class="section-title">
+                    <h2>Nos <span>Services</span></h2>
+                    <p>Nous mettons à votre disposition .</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <div class="box" style="text-align: center;">
+                            <span>01</span>
+                            <h4>Service Chauffeur </h4>
+                            <p><img src="https://img.icons8.com/pastel-glyph/50/000000/taxi--v2.png"/></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <div class="box"  style="text-align: center;">
+                            <span>02</span>
+                            <h4>Organisation Evénements</h4>
+                            <p><img src="https://img.icons8.com/dotty/80/000000/wedding-day.png"/></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <a href="" data-toggle="modal" data-target="#exampleModalCenter">
+                        <div class="box" style="text-align: center;">
+                            <span>03</span>
+                            <h4>Blanchisserie</h4>
+                            <p><img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/000000/external-cleaning-labour-day-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"/></p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Whu Us Section -->
+
+        <!-- ======= Menu Section ======= -->
+        <!--
+             <section id="menu" class="menu">
+             <div class="container">
+
+               <div class="section-title">
+
+               </div>
+
+               <div class="row">
+                 <div class="col-lg-12 d-flex justify-content-center">
+                   <ul id="menu-flters">
+                     <li data-filter="*" class="filter-active">Show All</li>
+                     <li data-filter=".filter-starters">Starters</li>
+                     <li data-filter=".filter-salads">Salads</li>
+                     <li data-filter=".filter-specialty">Specialty</li>
+                   </ul>
+                 </div>
+               </div>
+
+               <div class="row menu-container">
+
+                 <div class="col-lg-6 menu-item filter-starters">
+                   <div class="menu-content">
+                     <a href="#">Lobster Bisque</a><span>$5.95</span>
+                   </div>
+                   <div class="menu-ingredients">
+                     Lorem, deren, trataro, filede, nerada
+                   </div>
+                 </div>
+
+                 <div class="col-lg-6 menu-item filter-specialty">
+                   <div class="menu-content">
+                     <a href="#">Bread barrel</a><span>$6.95</span>
+                   </div>
+                   <div class="menu-ingredients">
+                     Lorem, deren, trataro, filede, nerada
+                   </div>
+                 </div>
+
+                 <div class="col-lg-6 menu-item filter-starters">
+                   <div class="menu-content">
+                     <a href="#">Crab Cake</a><span>$7.95</span>
+                   </div>
+                   <div class="menu-ingredients">
+                     A delicate crab cake served on a toasted roll with lettuce and tartar sauce
+                   </div>
+                 </div>
+
+                 <div class="col-lg-6 menu-item filter-salads">
+                   <div class="menu-content">
+                     <a href="#">Caesar Selections</a><span>$8.95</span>
+                   </div>
+                   <div class="menu-ingredients">
+                     Lorem, deren, trataro, filede, nerada
+                   </div>
+                 </div>
+
+                 <div class="col-lg-6 menu-item filter-specialty">
+                   <div class="menu-content">
+                     <a href="#">Tuscan Grilled</a><span>$9.95</span>
+                   </div>
+                   <div class="menu-ingredients">
+                     Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+                   </div>
+                 </div>
+
+                 <div class="col-lg-6 menu-item filter-starters">
+                   <div class="menu-content">
+                     <a href="#">Mozzarella Stick</a><span>$4.95</span>
+                   </div>
+                   <div class="menu-ingredients">
+                     Lorem, deren, trataro, filede, nerada
+                   </div>
+                 </div>
+
+                 <div class="col-lg-6 menu-item filter-salads">
+                   <div class="menu-content">
+                     <a href="#">Greek Salad</a><span>$9.95</span>
+                   </div>
+                   <div class="menu-ingredients">
+                     Fresh spinach, crisp romaine, tomatoes, and Greek olives
+                   </div>
+                 </div>
+
+                 <div class="col-lg-6 menu-item filter-salads">
+                   <div class="menu-content">
+                     <a href="#">Spinach Salad</a><span>$9.95</span>
+                   </div>
+                   <div class="menu-ingredients">
+                     Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+                   </div>
+                 </div>
+
+                 <div class="col-lg-6 menu-item filter-specialty">
+                   <div class="menu-content">
+                     <a href="#">Lobster Roll</a><span>$12.95</span>
+                   </div>
+                   <div class="menu-ingredients">
+                     Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
+                   </div>
+                 </div>
+
+               </div>
+
+             </div>
+           </section><!-- End Menu Section -->
+
+
+        <!-- ======= Events Section ======= -->
+        <!--
+      <section id="events" class="events">
+
+        <div class="container">
+
+          <div class="section-title">
+            <h2>Organize Your <span>Events</span> in our Restaurant</h2>
+          </div>
+
+          <div class="events-slider swiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="row event-item">
+                  <div class="col-lg-6">
+                    <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3>Birthday Parties</h3>
+                    <div class="price">
+                      <p><span>$189</span></p>
+                    </div>
+                    <p class="fst-italic">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua.
+                    </p>
+                    <ul>
+                      <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                      <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                      <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    </ul>
+                    <p>
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                      velit esse cillum dolore eu fugiat nulla pariatur
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="row event-item">
+                  <div class="col-lg-6">
+                    <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3>Private Parties</h3>
+                    <div class="price">
+                      <p><span>$290</span></p>
+                    </div>
+                    <p class="fst-italic">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua.
+                    </p>
+                    <ul>
+                      <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                      <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                      <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    </ul>
+                    <p>
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                      velit esse cillum dolore eu fugiat nulla pariatur
+                    </p>
+                  </div>
+                </div>
+              </div><!-- End testimonial item
+
+              <div class="swiper-slide">
+                <div class="row event-item">
+                  <div class="col-lg-6">
+                    <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <h3>Custom Parties</h3>
+                    <div class="price">
+                      <p><span>$99</span></p>
+                    </div>
+                    <p class="fst-italic">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua.
+                    </p>
+                    <ul>
+                      <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                      <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                      <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    </ul>
+                    <p>
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                      velit esse cillum dolore eu fugiat nulla pariatur
+                    </p>
+                  </div>
+                </div>
+              </div><!-- End testimonial item
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+
+      </section><!-- End Events Section -->
+
+        <!-- ======= Book A Table Section ======= --
+        <section id="book-a-table" class="book-a-table">
+          <div class="container">
+
+            <div class="section-title">
+              <h2>Book a <span>Table</span></h2>
+              <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            </div>
+
+            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3">
+                  <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3">
+                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3">
+                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+        </section><!-- End Book A Table Section -->
+
+        <!-- ======= Chefs Section ======= -->
+        <section id="chefs" class="chefs">
+            <div class="container" style="text-align: center;">
+
+                <div class="section-title">
+                    <h2>Bar & Restauration</h2>
+                    <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="member">
+                            <div class="pic"><img src="assets/img/gallery/7.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Green Bar</h4>
+                                <span></span>
+                                <!--      <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                      </div>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="member">
+                            <div class="pic"><img src="assets/img/gallery/1.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Restaurant le Bunker</h4>
+                                <span></span>
+                                <!--      <div class="social">
+                                 <a href=""><i class="bi bi-twitter"></i></a>
+                                 <a href=""><i class="bi bi-facebook"></i></a>
+                                 <a href=""><i class="bi bi-instagram"></i></a>
+                                 <a href=""><i class="bi bi-linkedin"></i></a>
+                               </div>-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Chefs Section -->
+
+
+        <!-- ======= Gallery Section ======= -->
+        <section id="gallery" class="gallery">
+
+            <div class="container-fluid">
+
+                <div class="section-title">
+                    <h2>Galerie Photos</h2>
+                    <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+                </div>
+
+                <div class="row no-gutters">
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/1.jpg" class="gallery-lightbox">
+                                <img src="assets/img/gallery/1.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/2.jpg" class="gallery-lightbox">
+                                <img src="assets/img/gallery/2.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/3.jpg" class="gallery-lightbox">
+                                <img src="assets/img/gallery/3.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/4.jpg" class="gallery-lightbox">
+                                <img src="assets/img/gallery/4.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/5.jpg" class="gallery-lightbox">
+                                <img src="assets/img/gallery/5.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/6.jpg" class="gallery-lightbox">
+                                <img src="assets/img/gallery/6.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/7.jpg" class="gallery-lightbox">
+                                <img src="assets/img/gallery/7.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/8.jpg" class="gallery-lightbox">
+                                <img src="assets/img/gallery/8.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </section><!-- End Gallery Section -->
+
+
+        <!-- ======= Testimonials Section ======= -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2><span>Contactez</span> Nous</h2>
+<p></p>
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.816722154052!2d10.18169361535861!3d36.79894447994886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd337f5d08f6d1%3A0xf5359a71c67f340b!2sGolf%20Royal%20H%C3%B4tel!5e0!3m2!1sfr!2stn!4v1639658965261!5m2!1sfr!2stn" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+
+            <div class="container mt-5">
+
+                <div class="info-wrap">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 info">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4>Adresse:</h4>
+                            <p>51-53 Rue Radia Haddad<br>Tunis 1001</p>
+                        </div>
+
+
+
+                        <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>info@example.com<br>contact@example.com</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                            <i class="bi bi-phone"></i>
+                            <h4>Téléphone:</h4>
+                            <p>00 216 71 34 43 11</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+<div class="card">
+    <div class="container">
+                <br>
+    {{ form_start(form) }}
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            {{ form_widget(form.nom, { 'attr':{'class':'form-control form-control-newsletter','placeholder': 'Nom'} }) }}
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                            {{ form_widget(form.email, { 'attr':{'class':'form-control form-control-newsletter','placeholder': 'Email'} }) }}
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        {{ form_widget(form.subject, { 'attr':{'class':'form-control form-control-newsletter','placeholder': 'Sujet'} }) }}
+
+                    </div>
+                    <div class="form-group mt-3">
+                        {{ form_widget(form.message, { 'attr':{'class':'form-control form-control-newsletter','placeholder': 'Message'} }) }}
+                    </div>
+              <br>
+               <div class="text-center">   <input type="submit" value="Envoyer" class="book-a-table-btn" /></div>
+        <br>
+        {{ form_end(form) }}
+    </div>
+</div>
+            </div>
+        </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+
+{% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}
